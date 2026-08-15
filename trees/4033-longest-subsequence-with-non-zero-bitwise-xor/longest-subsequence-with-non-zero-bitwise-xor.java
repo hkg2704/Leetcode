@@ -3,10 +3,10 @@ class Solution {
        int xmax = 0;
        int ormax = 0;
 
-       for(int num : nums)
+       for(int i= 0; i<nums.length; i++)
        {
-        xmax ^= num;
-        ormax |= num;
+        xmax ^= nums[i];
+        ormax |= nums[i];
        }
 
        if(xmax != 0) return nums.length;
